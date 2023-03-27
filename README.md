@@ -48,9 +48,6 @@
 
 <ul>
 <li>Gitflow execution</li>
-<li>Working Calculator</li>
-<li>Hompage and navbar</li>
-<li>Api based</li>
 </ul>
 
 
@@ -105,6 +102,12 @@ cd 'project name'
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
+<ul>
+  <li>Working Calculator</li>
+  <li>Api based</li>
+  <li>Hompage and navbar</li>
+</ul>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
