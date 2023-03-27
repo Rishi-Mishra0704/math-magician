@@ -46,7 +46,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Git Flow execution]**
+<ul>
+<li>Gitflow execution</li>
+<li>Working Calculator</li>
+<li>Hompage and navbar</li>
+<li>Api based</li>
+</ul>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
