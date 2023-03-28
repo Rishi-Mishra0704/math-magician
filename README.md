@@ -60,14 +60,16 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
-
+git clone https://github.com/Rishi-Mishra0704/math-magician.git
 ### Prerequisites
 
 In order to run this project you need:
 
-node 
-npm 
-internet
+<ul>
+<li>node </li>
+<li>npm start</li>
+<li>internet</li>
+</ul>
 
 ### Setup
 
@@ -76,7 +78,7 @@ Use Terminal:
 
 cd my-folder
 
-git clone 
+git clone https://github.com/Rishi-Mishra0704/math-magician.git
 
 ### Install
 
@@ -87,7 +89,7 @@ cd 'project name'
 "npm i" to install all dependencies
 
 ### Run tests
-
+"npm test " to run the tests
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
