@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Calculator from './components/calculator/Calculator';
-import Quotes from './components/quotes/Quotes';
 import Root from './components/Root';
+import QuotesPage from './components/quotes/QuotesPage';
 
 const App = () => (
   <BrowserRouter>
@@ -11,7 +11,7 @@ const App = () => (
       <Route path="/" element={<Root />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/calculator" element={<Calculator />} />
-        <Route path="/quotes" element={<Quotes />} />
+        <Route path="/quotes" element={<QuotesPage />} />
       </Route>
     </Routes>
   </BrowserRouter>
