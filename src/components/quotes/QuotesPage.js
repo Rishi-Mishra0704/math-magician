@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import classes from '../css/Quotes.module.css';
 
-const Quote = () => {
+const QuotesPage = () => {
   const [quote, setQuote] = useState('');
+  const [author, setAuthor] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -28,10 +30,8 @@ const Quote = () => {
 
         const data = await response.json();
         if (isMounted) {
-          // console.log(data); PLEASE DO NOT REMOVE THIS LINE ,
-          // for some reason the api does not properly work without it
-          // There is some issue with api ninja.
           setQuote(data[0].quote);
+          setAuthor(data[0].author);
           setIsLoading(false);
         }
       } catch (error) {
@@ -42,19 +42,22 @@ const Quote = () => {
     fetchQuote();
   }, [isMounted]);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  if (isError) {
-    return <div>Failed to fetch quote.</div>;
-  }
-
   return (
-    <div>
-      <p>{quote}</p>
+    <div className={classes.container}>
+      {isLoading && <div>Loading...</div>}
+      {isError && <div>Failed to fetch quote.</div>}
+      {!isLoading && !isError && (
+        <div>
+          <p>
+            &#34;
+            {quote}
+            &#34; ~
+            {author}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
 
-export default Quote;
+export default QuotesPage;

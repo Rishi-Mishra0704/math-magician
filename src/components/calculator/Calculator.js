@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classes from '../css/Calculator.module.css';
-import calculate from '../logic/calculate';
+import calculate from './logic/calculate';
+import Quote from './quotes';
 
 const Calculator = () => {
   const [calculatorData, setCalculatorData] = useState({
@@ -18,7 +19,12 @@ const Calculator = () => {
 
   return (
     <>
-      <div className={classes.calculator}>
+      <div className={classes.quoteBox}>
+        <div className={classes.quote}>
+          <Quote />
+        </div>
+      </div>
+      <div className={`${classes.calculator} ${classes.Calculator}`}>
         <div className={classes.display}>{displayValue}</div>
         <button type="button" onClick={() => handleClick('AC')}>ac</button>
         <button type="button" onClick={() => handleClick('+/-')}>+/-</button>
