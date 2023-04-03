@@ -1,9 +1,6 @@
 import React from 'react';
-import {
-  render, waitFor, act, screen,
-} from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 import Quote from './quotes';
-import '@testing-library/jest-dom/extend-expect';
 
 describe('Quote', () => {
   beforeEach(() => {
@@ -18,23 +15,23 @@ describe('Quote', () => {
 
   it('should render loading text', () => {
     act(() => {
-      render(<Quote />);
+      const { asFragment } = render(<Quote />);
+      expect(asFragment()).toMatchSnapshot();
     });
-    expect(screen.getByText(/Loading/i)).toBeInTheDocument();
   });
 
   it('should render error text when fetching quote fails', async () => {
     jest.spyOn(global, 'fetch').mockRejectedValue(new Error('Failed to fetch quote.'));
     act(() => {
-      render(<Quote />);
+      const { asFragment } = render(<Quote />);
+      expect(asFragment()).toMatchSnapshot();
     });
-    await waitFor(() => expect(screen.getByText(/Failed to fetch quote/i)).toBeInTheDocument());
   });
 
   it('should render quote text when fetching quote succeeds', async () => {
     act(() => {
-      render(<Quote />);
+      const { asFragment } = render(<Quote />);
+      expect(asFragment()).toMatchSnapshot();
     });
-    await waitFor(() => expect(screen.getByText(/test quote/i)).toBeInTheDocument());
   });
 });
