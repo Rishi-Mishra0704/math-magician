@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders calculator page when clicked on the link 1`] = `
+<header>
+  <nav
+    class="navbar"
+  >
+    <h1>
+      Math Magician
+    </h1>
+    <ul
+      class="navList"
+    >
+      <li>
+        <a
+          class="navLink"
+          href="/"
+        >
+          HomePage
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink-last-child"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`App renders homepage by default 1`] = `
+<header>
+  <nav
+    class="navbar"
+  >
+    <h1>
+      Math Magician
+    </h1>
+    <ul
+      class="navList"
+    >
+      <li>
+        <a
+          class="navLink"
+          href="/"
+        >
+          HomePage
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink-last-child"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`App renders quotes page when clicked on the link 1`] = `
+<header>
+  <nav
+    class="navbar"
+  >
+    <h1>
+      Math Magician
+    </h1>
+    <ul
+      class="navList"
+    >
+      <li>
+        <a
+          class="navLink"
+          href="/"
+        >
+          HomePage
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink-last-child"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;

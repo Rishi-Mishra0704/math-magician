@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import classes from './css/Navbar.module.css';
+import classes from '../css/Navbar.module.css';
 
 const Navbar = () => (
   <header>

@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component renders Calculator link 1`] = `
+<header>
+  <nav
+    class="navbar"
+  >
+    <h1>
+      Math Magician
+    </h1>
+    <ul
+      class="navList"
+    >
+      <li>
+        <a
+          class="navLink"
+          href="/"
+        >
+          HomePage
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink-last-child"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`Navbar component renders HomePage link 1`] = `
+<header>
+  <nav
+    class="navbar"
+  >
+    <h1>
+      Math Magician
+    </h1>
+    <ul
+      class="navList"
+    >
+      <li>
+        <a
+          class="navLink"
+          href="/"
+        >
+          HomePage
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink-last-child"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`Navbar component renders Math Magician header 1`] = `
+<header>
+  <nav
+    class="navbar"
+  >
+    <h1>
+      Math Magician
+    </h1>
+    <ul
+      class="navList"
+    >
+      <li>
+        <a
+          class="navLink"
+          href="/"
+        >
+          HomePage
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink-last-child"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`Navbar component renders Quotes link 1`] = `
+<header>
+  <nav
+    class="navbar"
+  >
+    <h1>
+      Math Magician
+    </h1>
+    <ul
+      class="navList"
+    >
+      <li>
+        <a
+          class="navLink"
+          href="/"
+        >
+          HomePage
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class="navLink-last-child"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
